@@ -122,7 +122,7 @@ export const VelordsRewards = () => {
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
-          Rewards for veLords are distributed at weekly epochs
+          Rewards for veLORDS are distributed at weekly epochs
         </div>
       </CardFooter>
     </Card>

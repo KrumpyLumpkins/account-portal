@@ -87,7 +87,7 @@ export function HomepageSkeleton() {
               <div>
                 <div className="bg-muted h-9 w-20 animate-pulse rounded" />
                 <div className="text-muted-foreground text-sm">
-                  Staked (veLords)
+                  Staked (veLORDS)
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ export function HomepageSkeleton() {
                   <div className="flex items-center gap-3">
                     <LordsIcon className="h-6 w-6" />
                     <div>
-                      <div className="font-semibold">veLords Rewards</div>
+                      <div className="font-semibold">veLORDS Rewards</div>
                       <div className="text-muted-foreground text-sm">
                         Staking rewards available
                       </div>

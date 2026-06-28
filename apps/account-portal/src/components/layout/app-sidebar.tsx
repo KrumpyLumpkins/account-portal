@@ -43,24 +43,9 @@ const data = {
 
   lords: [
     {
-      title: "veLords (staking)",
+      title: "veLORDS",
       url: "/velords",
       icon: Banknote,
-
-      /* items: [
-        {
-          title: "Staking",
-          url: "#",
-        },
-        {
-          title: "Claim Rewards",
-          url: "#",
-        },
-        {
-          title: "Statistics",
-          url: "#",
-        },
-      ],*/
     },
   ],
 
@@ -105,19 +90,15 @@ const data = {
           url: "https://www.coingecko.com/en/coins/lords",
         },
         {
-          title: "Merch Shop",
-          url: "https://shop.realms.world/",
-        },
-        {
           title: "Discord",
           url: "https://discord.com/invite/realmsworld",
         },
         {
-          title: "Twitter",
-          url: "https://x.com/lootrealms",
+          title: "X / Twitter",
+          url: "https://x.com/LootRealms",
         },
         {
-          title: "Github",
+          title: "GitHub",
           url: "https://github.com/bibliothecaDAO",
         },
       ],
@@ -133,7 +114,7 @@ const data = {
         },
         {
           title: "Eternum",
-          url: "https://blitz.realms.world",
+          url: "https://eternum.realms.world/",
         },
         {
           title: "Developer",

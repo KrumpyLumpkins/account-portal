@@ -202,7 +202,7 @@ export const StakeLords = () => {
             />
         </div>
         <div className="flex items-center gap-2 font-medium leading-none">
-          veLords are entitled to a share of Lords fees from ecosystem games and
+          veLORDS holders are entitled to a share of Lords fees from ecosystem games and
           marketplaces. One lock per wallet address.
         </div>
         <div className="text-muted-foreground leading-none">

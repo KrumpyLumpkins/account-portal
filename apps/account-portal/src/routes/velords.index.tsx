@@ -91,9 +91,9 @@ export const Route = createFileRoute("/velords/")({
   head: () => ({
     meta: [
       ...seo({
-        title: "RW | veLords Dashboard",
+        title: "RW | veLORDS Dashboard",
         description:
-          "Track veLords rewards, lock activity, and your staking position.",
+          "Track veLORDS rewards, lock activity, and your staking position.",
         image: "/icon.svg",
       }),
     ],
@@ -188,7 +188,7 @@ function RouteComponent() {
   const handleCopyLink = async () => {
     try {
       await navigator.clipboard.writeText(window.location.href);
-      toast({ description: "veLords dashboard link copied." });
+      toast({ description: "veLORDS dashboard link copied." });
     } catch (error) {
       toast({
         variant: "destructive",
@@ -200,7 +200,7 @@ function RouteComponent() {
 
   const handleCopySummary = async () => {
     const summary = [
-      `veLords Dashboard (${selectedPeriod})`,
+      `veLORDS Dashboard (${selectedPeriod})`,
       `TVL: ${
         typeof tvl === "number" && Number.isFinite(tvl)
           ? `$${tvl.toLocaleString(undefined, { maximumFractionDigits: 0 })}`
@@ -214,7 +214,7 @@ function RouteComponent() {
 
     try {
       await navigator.clipboard.writeText(summary);
-      toast({ description: "veLords summary copied." });
+      toast({ description: "veLORDS summary copied." });
     } catch (error) {
       toast({
         variant: "destructive",
@@ -229,7 +229,7 @@ function RouteComponent() {
       <div className="container mx-auto px-4 py-6 sm:px-6 sm:py-8">
         <PageHeader
           eyebrow="Lords"
-          title="veLords Dashboard"
+          title="veLORDS Dashboard"
           description="Stake $LORDS in the Lordship Protocol and monitor reward performance."
           actions={
             <>

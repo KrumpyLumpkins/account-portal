@@ -47,11 +47,12 @@ const comingSoonSource = readFileSync(comingSoonPath, "utf8");
 const markdownRendererSource = readFileSync(markdownRendererPath, "utf8");
 
 describe("account portal theme", () => {
-  it("uses the realms-world-site font stack", () => {
+  it("uses Exo 2 for body copy and the realms display stack", () => {
     expect(styles).toContain("family=Cinzel");
+    expect(styles).toContain("family=Exo+2");
     expect(styles).toContain("family=MedievalSharp");
     expect(styles).toContain("family=Rajdhani");
-    expect(styles).toContain("--font-sans: Rajdhani, sans-serif;");
+    expect(styles).toContain('--font-sans: "Exo 2", Rajdhani, sans-serif;');
     expect(styles).toContain("--font-serif: MedievalSharp, serif;");
     expect(styles).toContain("--font-display: Cinzel, serif;");
   });
@@ -135,7 +136,7 @@ describe("account portal theme", () => {
     expect(delegateListSource).not.toContain("bg-background top-0");
   });
 
-  it("uses shared components for the veLords header and stat cards", () => {
+  it("uses shared components for the veLORDS header and stat cards", () => {
     expect(velordsIndexSource).toContain("PageHeader");
     expect(velordsIndexSource).toContain("MetricCard");
   });
@@ -161,8 +162,12 @@ describe("account portal theme", () => {
   it("uses the cleaned sidebar destination map", () => {
     expect(appSidebarSource).not.toContain('title: "Claims"');
     expect(appSidebarSource).toContain("https://market.realms.world");
+    expect(appSidebarSource).not.toContain("Merch Shop");
+    expect(appSidebarSource).not.toContain("https://shop.realms.world/");
     expect(appSidebarSource).toContain('url: "https://realms.world"');
-    expect(appSidebarSource).toContain('url: "https://blitz.realms.world"');
+    expect(appSidebarSource).toContain('url: "https://eternum.realms.world/"');
     expect(appSidebarSource).toContain('url: "https://docs.realms.world"');
+    expect(appSidebarSource).toContain('url: "https://x.com/LootRealms"');
+    expect(appSidebarSource).not.toContain('url: "https://x.com/lootrealms"');
   });
 });

@@ -217,7 +217,7 @@ export function Homepage({ address }: { address: `0x${string}` }) {
                     )}
                   </StatValue>
                   <div className="text-muted-foreground text-sm">
-                    Staked (veLords)
+                    Staked (veLORDS)
                   </div>
                 </div>
               </div>
@@ -261,7 +261,7 @@ export function Homepage({ address }: { address: `0x${string}` }) {
                       <div className="flex items-center gap-3">
                         <LordsIcon className="h-6 w-6" />
                         <div>
-                          <div className="font-semibold">veLords Rewards</div>
+                          <div className="font-semibold">veLORDS Rewards</div>
                           <div className="text-muted-foreground text-sm">
                             Staking rewards available
                           </div>
@@ -300,7 +300,7 @@ export function Homepage({ address }: { address: `0x${string}` }) {
                 }
                 variant="outline"
               >
-                {claimVeLordsIsSubmitting ? "Claiming..." : "Claim veLords"}
+                {claimVeLordsIsSubmitting ? "Claiming..." : "Claim veLORDS"}
               </Button>
             </CardFooter>
           </Card>
